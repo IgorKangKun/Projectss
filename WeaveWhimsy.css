@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(252, 229, 202);
+}
+
+h1.titulo {
+    text-align: center;
+    font-size:3em;
+}

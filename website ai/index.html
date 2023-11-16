@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Input Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <strong>
+            <span class="header-text">INICIO</span>
+            <span class="header-text">INSCRICOES</span>
+            <span class="header-text">EQUIPAS</span>
+            <span class="header-text">HORÁRIOS</span>
+        </strong>
+    </header>
+    <div class="form">
+        <form class="form-infos" action="process_form.php" method="POST">
+            <label for="game">Escolhe o jogo</label>
+            <select name="game" id="gameSelect">
+                <option value="Mortal Kombat 11" for="mortalkombat">Mortal Kombat 11</option>
+                <option value="Dragon Ball FighterZ" for="dragonball">Dragon Ball FighterZ</option>
+                <option value="Street Fighter" for="streetfighter">Street Fighter</option>
+                <option value="FIFA" for="fifa">FIFA</option>
+            </select>
+            <br>
+            <div id="fifaInputContainer" for="NomeEquipas"></div><br>
+            <label for="NumerosAlunos">Numeros dos Alunos</label><br>
+            <input type="text" name="NumerosAlunos" id="NumerosAlunos"><br>
+            <button type="submit" class="btn-cadastrar"><strong> Cadastrar equipa</strong></button>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function handleGameSelectChange() {
+            var selectedOption = document.querySelector('#gameSelect').value;
+            var fifaInputContainer = document.getElementById("fifaInputContainer");
+            fifaInputContainer.innerHTML = "";
+    
+            if (selectedOption === "FIFA") {
+                var inputLabel = document.createElement("label");
+                inputLabel.textContent = "Nome da equipa";
+                fifaInputContainer.appendChild(inputLabel);
+    
+                var lineBreak = document.createElement("br");
+                fifaInputContainer.appendChild(lineBreak); // Add a line break
+    
+                var inputField = document.createElement("input");
+                inputField.type = "text";
+                inputField.name = "NomeEquipasFIFA";
+                inputField.id = "NomeEquipasFIFA";
+                fifaInputContainer.appendChild(inputField); // Add the input field
+            }
+        }
+    
+        var selectElement = document.querySelector('#gameSelect');
+        selectElement.addEventListener("change", handleGameSelectChange);
+    
+        handleGameSelectChange();
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    background-image: url('fundo.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-family: 'century', sans-serif;
+    
+}
+
+.header-text:hover {
+    color: rgb(180, 180, 180);
+}
+
+
+
+.form {
+    margin-top: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.form-infos {
+    font-size: 30px;
+    text-align: center;
+    padding: -10px;
+    color: white;
+
+}
+
+input {
+    background: rgba(0, 0, 0, 0.404);
+    border: none; 
+    width: 250px;
+    height: 40px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    outline: none; /* Remove the outline */
+    box-shadow: 0 0 19px #025cff, 0 0 19px #fca0c5;
+}
+
+.btn-cadastrar {
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    background: #fca0c5;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.logo-form {
+    float: right;
+    margin-top: -360px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.information {
+    margin-top: 220px;
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: 'century';
+    src: url('FontsFree-Net-Centauri.ttf') format('truetype');
+    /* Other font formats and variations if needed */
+}

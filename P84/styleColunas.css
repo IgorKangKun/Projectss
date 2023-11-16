@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #67989A;
+    --cor2: #417E80;
+    --cor3: #236467;
+    --cor4: #0D4A4D;
+    --cor5: #003133;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    background-image:linear-gradient(to bottom, var(--cor5) ,var(--cor3) ) ;
+    background-attachment:fixed;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.485);
+    border: 2px solid black;
+    padding: 5px 5px 60px 5px;
+    margin:100px auto;
+    width: 50%;
+
+}
+
+#letra{
+    text-shadow: 2px 2px 2px black;
+    color: white;
+    font-size: 2em;
+}
+
+.linha1 {
+    background-color:var(--cor2);
+    color: white;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
+    width: 69px;
+}
+
+#A, #B, #C, #D, #E, #F, #G, #H {
+    background-color:var(--cor2);
+    color: white;
+}
+
+.linha1b {
+    border-radius: 0px;
+}
+#l9 {
+    border-radius: 0px 10px 0px 0px;
+}
+
+#H9 {
+    border-radius: 0px 0px 10px 0px;
+}
+
+#B, #C, #D, #E, #F, #G {
+    border-radius: 0px;
+}
+
+#H {
+    border-radius: 0px 0px 0px 10px;
+}
+
+#A,#l1{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.Espaços {
+    border-radius:0px; 
+    background-color: white;
+}
+
+.Espaços:hover{
+    background-color: var(--cor1);
+    transition: translate(-5px);
+}
+
+.Espaços:checked{
+    background-color: var(--cor1);
+}
+
+.segredo{
+    border: transparent;
+}
